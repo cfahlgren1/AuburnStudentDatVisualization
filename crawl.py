@@ -17,6 +17,8 @@ Pictures', 'CachedFiles', 'Pinned', 'abrt', 'share', 'mail', 'Vault', 'Microsoft
 Pinned', 'ImplicitAppShortcuts', 'Pbk', '_hiddenPbk', 'Recent', 
 'AutomaticDestinations', 'CustomDestinations', 'Oracle', 'Adobe', '.appdata', 
 '.Application Data', 'Application Data', 'Mozilla', 'Custom Office Templates' ]
+
+
 ignoreFileList = 
 ['.fm','wastebasket','.login','.Xdefaults','ntuser.cmd','Bluetooth File 
 Transfer.LNK','Documents.library-ms','Pictures.library-ms','mail','.logout','.bash_history','Xdefaults','.openwin-init','.cshrc', 
