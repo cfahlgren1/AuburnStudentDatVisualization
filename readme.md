@@ -63,7 +63,7 @@ below.
 
 **Small Data Example**
 
-![](https://image.ibb.co/jcGkN8/Screenshot_2018_06_21_23_30_34.png)
+![](https://image.ibb.co/gz8oaT/Screenshot_2018_06_21_23_30_34.jpg)
 
 **Total Vulnerable Data as of 06/27/2018 :**
 
