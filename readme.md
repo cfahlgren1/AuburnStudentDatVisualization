@@ -13,13 +13,13 @@ student files for ransom. Additionally, with the access to over 15,000
 usernames, it opens a huge attack surface of phishing attacks and brute
 force attacks to Auburn student email accounts and canvas accounts.
 
-**How I came across the issue : **
+**How I came across the issue :**
 
 When first logging into my student account through ssh and
 **gate.eng.auburn.edu** I noticed that my home directory had the
 privileges below.
 
-**drwxr-xr-x+**
+*drwxr-xr-x+*
 
 This can be particularly concerning as others have read access to my
 student account home directory and have the ability to potentially
@@ -35,7 +35,7 @@ directories to assess the attack surface of a potential attacker.
 program. The only data that was taken in the program was metadata such
 as which students had readable/writeable files and how many students
 created files in there home directory. **No files were read, copied, or
-written to. **
+written to.**
 
 The Python program that I built first would change the directory to the
 home directory. Next it would loop through the different directories
@@ -59,14 +59,11 @@ below.
 
 **Final Report**
 
-![](media/image1.png){width="2.6041666666666665in"
-height="2.8097222222222222in"}
+![](https://image.ibb.co/n9WwUo/Screenshot_2018_06_27_12_31_23.png)
 
 **Small Data Example**
 
-[]{.underline}
-
-![](media/image2.png){width="6.925in" height="2.3583333333333334in"}
+![](https://image.ibb.co/jcGkN8/Screenshot_2018_06_21_23_30_34.png)
 
 **Total Vulnerable Data as of 06/27/2018 :**
 
@@ -84,7 +81,7 @@ The solution to fix this issue is as easy as changing the privileges of
 the student directories where only the owner of the directory can
 read/write. The Linux command below will do just this!
 
-**chmod 700 \<folder name\>**
+***chmod 700 \<folder name\>***
 
 Since there are over 15,000 accessible accounts in the
 **gate.eng.auburn.edu** you would have to loop through all of the
