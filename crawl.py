@@ -24,14 +24,11 @@ print (" " + """
 \____/  \___|\__,_||_| |_||_| |_| \___||_|  
  
 
-############################################
-                                             
+############################################                             
                                              
 """)
 
 time.sleep(0.5)
-
-
 
 # Change directory to root home
 os.chdir("/home")
@@ -109,15 +106,19 @@ for directory in dirList:
                 # Change Directory to User Folder and catch errors
                 try:
                     os.chdir(user_path)
-
+                    
+                    # Grab group id and user id to use on folders
                     stat_info = os.stat(user_path)
                     uid = stat_info.st_uid
                     gid = stat_info.st_gid
-
+                  
+                    # Check if folder is part of the ee group
                     if (str(grp.getgrgid(gid)[0]) == "ee"):
                         ee_count += 1
+                    # Check if folder is part of neng group
                     if (str(grp.getgrgid(gid)[0]) == "neng"):
                         neng_count += 1
+                    # Check if folder is part of the ugrad group
                     if (str(grp.getgrgid(gid)[0]) == "ugrad"):
                         ugrad_count += 1
 
@@ -147,9 +148,10 @@ for directory in dirList:
 
                             except Exception:
                                 pass
+                            # Increment the file count variables
                             numOfFiles += 1
                             total_file_count += 1
-
+                # Check if user has created files and is active
                 if (numOfFiles >= 1):
                     active_users += 1
 
@@ -161,6 +163,7 @@ for directory in dirList:
     except Exception():
         pass
 
+# Print report
 print("\n\nTOTAL COUNT:  " + str(incrementer))
 print("ACTIVE USERS   :  " + str(active_users))
 print("TOTAL FILE COUNT: " + str(total_file_count))
