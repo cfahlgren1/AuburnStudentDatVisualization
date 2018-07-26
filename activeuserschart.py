@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 
 def active_users(active, inactive):
         # Data to plot
-        labels = 'Unactive', 'Active'
+        labels = 'Active', 'Inactive'
 
         plt.title("User Accounts")
 
@@ -16,3 +16,5 @@ def active_users(active, inactive):
 
         plt.axis('equal')
         plt.savefig('foo.png', bbox_inches='tight')
+
+active_users(5512, 15494)

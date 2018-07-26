@@ -92,3 +92,17 @@ root privileges can run this command against the student directories.
 Please keep in mind that there are over 15,000 accessible student home
 directories and their usernames are accessible, so please fix this
 quickly.
+
+With this data, I was able to build some simple graphs displaying the activity of 
+different student accounts. I judged a student account as active, if there were
+files that they are/were working on in their directory. 
+
+![](https://image.ibb.co/mzkkg8/foo.png)
+
+Next, I plotted the different student directories in the Auburn root directory. Different 
+users are stored in different student directories. For example, I found alot of engineering
+professors had their account in the 'new-ece' directory.
+
+![](https://image.ibb.co/mZsgM8/Directory_Graph.png)
+
+
